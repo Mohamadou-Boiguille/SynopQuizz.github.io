@@ -1,0 +1,188 @@
+/* have to change class names to BEM */
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background: url("img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.backgroundFade::after {
+  animation: opacity 2s;
+}
+
+body::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6d6d6d79; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgba(0, 0, 0, 0); /* creates padding around scroll thumb */
+}
+
+.letters {
+  font-family: monospace;
+  font-size: 25px;
+  letter-spacing: 5px;
+  background: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-shadow: 1px 1px 1px #858585;
+}
+
+#fadedBg {
+  min-height: calc(100% - 35px);
+  background: linear-gradient(
+    to right bottom,
+    hsl(0, 0%, 100%) 25%,
+    rgba(255, 255, 255, 0.459)
+  );
+}
+
+header {
+  position: relative;
+  background: linear-gradient(to right, rgb(68, 24, 141), rgb(180, 157, 153));
+  padding: 1.5%;
+  color: whitesmoke;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0px 7px 5px rgba(114, 114, 114, 0.699);
+}
+
+#contenuFlex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding: 0 0 0 0;
+  column-gap: 2rem;
+}
+
+#gameDiv {
+  padding: 2% 2% 0 2%;
+  flex-grow: 2;
+}
+
+.gameFont {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.placeholder::after {
+  position: relative;
+  display: block;
+  content: attr(dataplaceholder);
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+#answer {
+  border: none;
+  border-bottom: 2px solid #0275d8;
+  outline: none;
+  width: 80%;
+}
+
+#valider {
+  margin: 1% 0 1% 0;
+}
+
+#solutionDiv {
+  width: 100%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+
+#imageHolder {
+  height: 50vh;
+}
+
+#imageHolder img {
+  height: 45vh;
+  border-radius: 5%;
+  filter: drop-shadow(5px 10px 4px hsl(240, 25%, 69%));
+  padding: 1.5% 0 2% 0;
+}
+
+#imageHolder img:hover {
+  height: 47vh;
+  filter: drop-shadow(9px 18px 8px hsl(240, 25%, 69%));
+}
+
+#bouton {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#trailerDiv {
+  flex-grow: 2;
+  position: relative;
+  padding-bottom: 35.25%; /* 16:9 */
+}
+#trailerDiv iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#historyDiv {
+  height: 100%;
+  padding: 2% 2% 0 2%;
+  display: flex;
+}
+
+.historyColumn {
+  flex-flow: column wrap;
+  width: 25%;
+}
+.historyRow {
+  width: 100%;
+  flex-flow: row wrap;
+}
+
+#historyDiv button {
+  margin: 1%;
+}
+
+#historyDiv a,
+#historyDiv a:visited,
+#historyDiv a:hover,
+#historyDiv a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mb-3 {
+  /* bouton bootstrap historique */
+  padding-bottom: 0.3rem !important;
+}
+
+.logo {
+  width: 10%;
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: auto;
+  margin: auto;
+  text-align: center;
+  vertical-align: bottom;
+  width: 100%;
+  height: 35px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Synop Quizz - Trouvez le nom du film a l'aide du synopsis</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+</head>
+
+<body>
+      <div id="fadedBg">
+        <div id="contenuFlex">
+  <header>
+    <h1 style="display: inline;">Synop Quizz</h1>
+    <p class="phrase_header">Nous vous proposons le synopsis d'un film : À vous de retrouver le titre</p>
+  </header>
+          <div id="gameDiv">
+            <div> <span id="synopsis" class="gameFont"> 
+              <h4>Comment jouer ?</h4>
+              <br>- Lisez le synopsis et utilisez l'indice pour tenter de trouver le titre du film.
+              <br>- L' indice change à chaque tentative.
+              <br>- Les accents et les caractères spéciaux ne sont pas obligatoires.
+              <br>- Vous pouvez obtenir plus d'infos sur le film en cliquant sur la jaquette.
+              <br>- Obtenez aussi la fiche des films avec lesquels vous avez joué en cliquant sur son bouton dans l'historique.
+              <br><br>Cliquez sur "Commencer" et bonne chance ! <br><br></span>
+            <div class="answer">
+              <span id="answerDiv"></span>
+              <form id="form" autocomplete="off">
+                <span class="placeholder letters" dataplaceholder="Indice_ici"></span>
+                <input spellcheck="false" type="text" id="answer" class="letters" />
+                <input type="submit" value="Valider" id="valider" class="btn btn-info" />
+                <p><span id="trying"></span></p>
+            </div>
+            </div>
+            </form>
+            <div id="solutionDiv">
+              <div id="imageDiv">
+              <span id="imageHolder"></span>
+            <div id="button"><input type="button" value="Commencer" id="bouton" class="btn btn-primary " /><br>
+              </div>
+            </div>
+              <div id="trailerDiv">
+              </div>
+          </div>
+            </div>
+          <div id="historyDiv" class="historyColumn">
+          </div>
+        </div>
+      </div><div class="footer-basic">
+        <footer>
+          <div>
+            <p>Toutes les sources sont offertes par le site The Movie Database - TMDb.org - 
+            <img class="logo" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="TMDb logo"></p>
+          </div>
+      </footer>
+    </div>
+      
+      
+  <script src="script.js"></script>
+</body>
+
+</html>
